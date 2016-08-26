@@ -1,3 +1,4 @@
+* text auto
 *.md text eol=lf
 *.txt text eol=lf
 *.css text eol=lf
@@ -7,6 +8,7 @@
 *.xml text eol=lf
 *.json text eol=lf
 *.html text eol=lf
+*.jsp text eol=lf
 *.png binary
 *.jpg binary
 *.jpeg binary

@@ -11,6 +11,8 @@
 - [Ejercicio6. ServletConfig y atributos](#ejercicio6-servletconfig-y-atributos)
 - [Ejercicio7. Sesiones](#ejercicio7-sesiones)
 - [Ejercicio8. Filtro logger](#ejercicio8-filtro-logger)
+- [Ejercicio9. Filtros, Sesiones, Peticiones y Contexto](#ejercicio9-filtros-sesiones-peticiones-y-contexto)
+- [Ejercicio10. Taglibs, Lenguaje de Expresiones y dominios](#ejercicio10-taglibs-lenguaje-de-expresiones-y-dominios)
 
 <!-- /MarkdownTOC -->
 
@@ -181,8 +183,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 1. Crea un nuevo servlet con nombre __Ejercicio4Servlet__
 2. __URL Mapping__: __/login__
 3. Selecciona __doPost__ y __doGet__
-4. Crea una página html que se llame __login.html__ y sitúala en __laboratorios -> Deployed Resources -> webapp__ (Click derecho y _New -> HTML File_)
-4. Crea un formulario que envíe los datos al servlet login
+4. Crea el código de un formulario que envíe los datos al servlet login. Hazlo dentro del método __doGet__
 
 ```html
     <form action="login" method="post">
@@ -200,12 +201,12 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
     </form>
 ```
 
-5. El servlet debe validar al usuario y clave enviado emitiendo una respuesta en caso favorable y otra en caso de error.
+5. El servlet debe validar al usuario y clave enviado emitiendo una respuesta en caso favorable y otra en caso de error en el método__doPost__.
     6. Las respuestas deben ser con cabecera __text/html__ y código formateado
     7. El usuario válido es: __usuario1__ con __password1__
     8. La respuesta válida debe saludar al usuario con su nombre de usuario
     9. La respuesta inválida debe mostrar un mensaje indicando que no tiene acceso y un enlace para volver al formulario de login
-    10. Sólo debe permitirse el acceso por __POST__ si se recibe peticiones por __GET__ se muestra el mensaje de error anterior.
+
 
 > Documentación necesaria _HttpServletRequest_[^2]
 
@@ -252,8 +253,70 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 1. Crea un nuevo paquete en `es.uc3m.tiw.lab1.filters` 
 2. Crea un nuevo Filtro en dicho paquete (New->Filter)
 3. Pon de Nombre: __LoggerFilter__
+4. ![](images/Imagen8.png)
+5. Pulsa __Next__ y en la siguiente pantalla cambia el _URL pattern_ por __/*__
+6. ![](images/Imagen9.png)
+7. __Next->Finish__
+8. Dentro del método `doFilter` pon el código necesario y termina con `chain.doFilter(request,response)`
+
+> El filtro debe mostrar por consola un registro de navegación del usuario del tipo: `<fecha> - <ip> - <protocolo> - <método> - <url> `. Un filtro avanzado registraría estos datos en un log del sistema, pero simplemente lo sacamos por consola por propósitos del laboratorio.
 
 
+> Ahora al navegar normalmente verás por consola todos tus movimientos del tipo:
+
+```
+26-08-2016 11:28:37 - 0:0:0:0:0:0:0:1 - HTTP/1.1 - GET - http://localhost8080/laboratorios/login
+26-08-2016 11:28:50 - 0:0:0:0:0:0:0:1 - HTTP/1.1 - POST - http://localhost8080/laboratorios/login
+26-08-2016 11:29:32 - 0:0:0:0:0:0:0:1 - HTTP/1.1 - GET - http://localhost8080/laboratorios/cabeceras
+```
+
+## Ejercicio9. Filtros, Sesiones, Peticiones y Contexto
+
+> Aunque permitimos que el usuario no necesite volver a pasar por el formulario de login mediante sesiones, eso no impide que un usuario que conozca la página _listado.jsp_ pueda acceder directamente a ella sin autenticarse. 
+> 
+> Por lo que en este ejercicio se propone controlar el acceso a la página _listado.jsp_ mediante un filtro que compruebe si el usuario dispone del token de autenticación en sesión.
+> 
+> __NOTA:__ aunque el usuario pueda acceder directamente al _listado.jsp_ esta página devolverá un _NullPointerException_ al no poder leer la lista de usuarios que el _LoginServlet_ le envía por request. Por lo que se propone como mejora del código controlar este error, o bien incorporar la lista de usuarios en _contexto_.
+> 
+> En este ejercicio se pueden apreciar las diferencias entre:
+> - peticiones (request)
+> - sesiones
+> - filtros
+> - contexto
+
+1. Crea un nuevo filtro en el paquete _filters_
+2. Nombre: __SecurityFilter__
+3. URL pattern: __/listado.jsp__
+4. Pon el código necesario en el método __doFilter__ para controlar si el usuario dispone de sesión para acceder, en caso contrario redirigirle al login.
+
+## Ejercicio10. Taglibs, Lenguaje de Expresiones y dominios
+
+> En este ejercicio vamos a refactorizar nuestras vistas añadiendo Expression Language (EL)[^6] y usando Taglibs JSTL[^7] para mejorarlas.
+> También vamos a sacar los datos del array de usuarios para hacerlo más dinámico y funcional mediante una capa de objetos de dominio.
+
+1. Modifica el código de __login.jsp__ sustituyendo todo el código java por jstl y EL
+2. Haz lo mismo con la página __listado.jsp__
+3. Crea una __clase java normal__ llamada __Usuario__ en un nuevo paquete _es.uc3m.tiw.lab1.dominios_ que tenga las siguiente propiedades y sus correspondientes métodos get/set:
+
+```java
+    String nombre;
+    String apellidos;
+    String usuario;
+    String password;
+
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    ...
+```
+
+4. Modifica el código del __LoginServlet__ para que ahora:
+    5. Contenga una lista de objetos Usuario ya creados
+    6. Que tenga una lógica nueva que permita acceder a cualquier usuario/password definidos en esa lista
+    7. Que pase al objeto usuario autenticado en sesión para que sea recibido por cualquier página a la que tenga acceso.
 
 
 
@@ -262,3 +325,5 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 [^3]: [Query_string](https://es.wikipedia.org/wiki/Query_string)
 [^4]: [RequestDispatcher](https://docs.oracle.com/javaee/7/api/javax/servlet/RequestDispatcher.html)
 [^5]: [HttpSession](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html)
+[^6]: [Expression Language](https://uel.java.net/)
+[^7]: [JSP Standard Tag Library (JSTL)](https://jstl.java.net/)
