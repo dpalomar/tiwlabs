@@ -33,7 +33,7 @@ public class Mensaje implements Serializable {
 	public Mensaje() {
 		// TODO Auto-generated constructor stub
 	}
-	public Mensaje(String mensaje2) {
+	public Mensaje(String mensaje) {
 		this.mensaje = mensaje;
 	}
 
