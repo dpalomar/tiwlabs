@@ -1,7 +1,7 @@
 # Tecnologías informáticas para la web
 
 
-![](../images/logo-uc3m.jpg)
+![](images/logo-uc3m.jpg)
 
 Universidad Carlos III de Madrid
 
