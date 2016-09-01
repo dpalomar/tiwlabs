@@ -22,7 +22,7 @@
 
 ## Ejercicio1. Configuración
 
-> En este ejercicio vamos a crear la inftaestructura REST usando la librería __jersey__ que ya está instalada en las dependencias del proyecto.
+> En este ejercicio vamos a crear la inftaestructura REST usando la librería __jersey__([https://jersey.java.net/]()) que ya está instalada en las dependencias del proyecto y en Glassfish/Payara.
 > 
 > - Es necesario primero crear una clase de configuración que establezca el path de consulta para devolver documentos con peticiones GET, POST, PUT y DELETE.
 > - la Url según esta configuración será `http://localhost:8080/laboratorios/rest/`
@@ -66,7 +66,7 @@ public class ApplicationConfig extends Application {
 > 
 
 1. Crea una nueva clase `es.uc3m.tiw.lab6.rest.EjemploService`
-2. Incopora la anotación _path_ con la ruta _ejemplo_
+2. Incorpora la anotación _path_ con la ruta _ejemplo_
     3. `@Path("ejemplo")`
 4. Crea un método `getText()` que devuelva un `String` que solamente se pueda acceder por `GET` que el contenido que devuelva sea `Texto plano` y que la ruta de acceso sea `/prueba`. El código debería parecerse al siguiente:
 
@@ -105,7 +105,7 @@ public class ApplicationConfig extends Application {
     7. Devuelva `xml` como salida
 6.  Modifica la clase `Usuario` para añadirle la edad.
 7.  Anota la clase `Usuario` con la anotación `@XmlRootElement` para que sea convertida explícitamente en xml al devolverla el servicio.
-8.  Abre la extensión __Advanced Rest Client__
+8.  Abre la extensión de Chromium:__Advanced Rest Client__
     9.  Invoca la dirección de acceso estableciendo el método como `POST`
     10.  ![](images/Imagen2.png)
 11.  Cuando pulses sobre el botón <kbd>SEND</kbd> obtendrás una respuesta en formato XML
@@ -117,7 +117,7 @@ public class ApplicationConfig extends Application {
 > 
 
 1. Crea un nuevo método que contenga:
-    2. admita `POST` como método de conexión
+    2. `POST` como método de conexión
     3. Consuma `APPLICATION_FORM_URLENCODED`
     4. Devuelva `APPLICATION_JSON`
 5. Abre la extensión __Advanced REST Client__
