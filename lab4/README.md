@@ -13,7 +13,7 @@ Para documentación puede consultarse el tutorial de Oracle[^1]
 
 ## Ejercicio1. Configuración a CDI
 
-> En este ejercicio se prodcederá a realizar las operaciones necesarias para convertir nuestro proyecto en un proyecto que admita las características CDI
+> En este ejercicio se procederá a realizar las operaciones necesarias para convertir nuestro proyecto en un proyecto que admita las características CDI
 
 
 1. Incorpora un fichero de texto plano `beans.xml` vacío en el directorio `WEB-INF`

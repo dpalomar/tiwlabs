@@ -55,7 +55,7 @@ es.uc3m.tiw
 
 5. El __LoginServlet__ debe cambiar ahora su código eliminando la creación de la lista de usuarios en memoria y usar el DAO para sacar los usuarios directamente de la base de datos.
     6. Para ello hace uso de la clase conector y pasa la conexión y el objeto ResourceBundle al DAO.
-    7. En el ejemplo el servlet recupera la conexión de un DataSource remoto, por lo que primeramente habría que crearlo en el servidor.
+    7. En el ejemplo el servlet recupera la conexión de un DataSource remoto, por lo que previamente habría que crearlo en el servidor.
 
 > Ya sólo nos queda crear la tabla __USUARIOS__ en el esquema de base de datos __tiw__ con las columnas emparejadas a las propiedades de la clase __Usuario__ para que todo funcione adecuadamente.
 > 
@@ -156,7 +156,7 @@ Deberías tener un código como el siguiente (pulsando sobre la _pestaña source
 
 ### 3. Crear el DataSource
 
-> En el fichero _persistence.xml_ hemos usado la cadena `jdbc/tiw` como definición del DataSource de Glassfish que apunta a nuestra base de datos. Ante de continuar es necesario crear dicho recurso en el servidor Glassfish.
+> En el fichero _persistence.xml_ hemos usado la cadena `jdbc/tiw` como definición del DataSource de Glassfish que apunta a nuestra base de datos. Antes de continuar es necesario crear dicho recurso en el servidor Glassfish.
 
 1. Abre la consola de administración de Glassfish: [https://localhost:4848](https://localhost:4848). Usuario/password: admin/admin
 2. Crea el DataSource.

@@ -291,7 +291,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 
 ## Ejercicio10. Taglibs, Lenguaje de Expresiones y dominios
 
-> En este ejercicio vamos a refactorizar nuestras vistas añadiendo Expression Language (EL)[^6] y usando Taglibs JSTL[^7] para mejorarlas.
+> En este ejercicio vamos a refactorizar nuestras vistas añadiendo Expression Language (__EL__)[^6] y usando Taglibs __JSTL__[^7] para mejorarlas.
 > También vamos a sacar los datos del array de usuarios para hacerlo más dinámico y funcional mediante una capa de objetos de dominio.
 
 1. Modifica el código de __login.jsp__ sustituyendo todo el código java por jstl y EL
