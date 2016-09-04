@@ -164,7 +164,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 4. Escribe el código necesario para sacar todas las cabeceras del cliente que se conecta con el navegador.
 5. Extrae también información relativa a su dirección de conexión, la url solicitada, el protocolo que ha usado, el servidor al que se ha conectado y el idioma usado.
 
-> Para extraer toda esa información necesitarás la documentación del API servlet de Java en concreto ServletRequest [^1] y HttpServletRequest [^2]
+> Para extraer toda esa información necesitarás la documentación del API servlet de Java en concreto ServletRequest<sup id="a1">[1](#f1)</sup> y HttpServletRequest<sup id="a2">[2](#f2)</sup>
 
 ## Ejercicio3. Parametros
 
@@ -173,10 +173,10 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 1. Crea un nuevo servlet en el paquete _lab1_ que se llame __Ejercicio3Servlet__
 2. En el _URL mapping_ cambia la cadena por __/parametros__
 2. Copia el código del ejercicio 1
-3. Crea el código necesario para que ahora el servlet imprima el mensaje: _Hola nombre_ donde _nombre_ será dinámicamente insertado por *QUERY_STRING*[^3]
+3. Crea el código necesario para que ahora el servlet imprima el mensaje: _Hola nombre_ donde _nombre_ será dinámicamente insertado por *QUERY_STRING*<sup id="a3">[3](#f3)</sup>
 4. La URL de acceso será: `http://localhost:8080/laboratorios/parametros?nombre=Juan` En este caso el servlet responderá: _Hola Juan_.
 
-> Para este ejercicio necesitarás la documentación de la clase HttpServletRequest[^2]
+> Para este ejercicio necesitarás la documentación de la clase HttpServletRequest<sup id="a2">[2](#f2)</sup>
 
 ## Ejercicio4. Parametros por POST
 
@@ -208,7 +208,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
     9. La respuesta inválida debe mostrar un mensaje indicando que no tiene acceso y un enlace para volver al formulario de login
 
 
-> Documentación necesaria _HttpServletRequest_[^2]
+> Documentación necesaria _HttpServletRequest_<sup id="a2">[2](#f2)</sup>
 
 ## Ejercicio5. JSP
 
@@ -222,7 +222,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 6. Borra el código que has incorporado a las jsps del _Ejercicio4Servlet_ y susitúyelo por un _RequestDispatcher_ haciendo un __forward__
 7. Renombra el Ejercicio4Servlet a __LoginServlet__ (Pulsa con el botón derecho sobre la clase Ejercicio4Servlet y selecciona _Refactor->Rename_)
 
-> Con esto conseguimos separar la lógica de negocio de la presentación. Para Este ejercicio necesitarás la documentación de RequestDispatcher[^4]
+> Con esto conseguimos separar la lógica de negocio de la presentación. Para Este ejercicio necesitarás la documentación de RequestDispatcher<sup id="a4">[4](#f4)</sup>
 
 ## Ejercicio6. ServletConfig y atributos
 
@@ -233,7 +233,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
     3. Necesitarás modificar el objeto request para añadir atributos.
 4. En la página __listado.jsp__ recupera el atributo de la lista y escribe una tabla dinámica con los datos del ArrayList
 
-> Para este ejercicio necesitarás la documentación de ServletRequest [^1] en concreto `getAttribute` y `setAttribute`
+> Para este ejercicio necesitarás la documentación de ServletRequest<sup id="a1">[1](#f1)</sup> en concreto `getAttribute` y `setAttribute`
 
 ## Ejercicio7. Sesiones
 
@@ -244,7 +244,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
     3. En este caso, añade un atributo _"mensaje"_ al request y dicho mensaje debe ser leído en la página _login.jsp_.
     4. El mensaje debe poner que el usuario no es válido
 
-> La documentación en este ejercicio será el API HttpSession[^5]
+> La documentación en este ejercicio será el API HttpSession<sup id="a5">[5](#f5)</sup>
 
 ## Ejercicio8. Filtro logger
 
@@ -291,7 +291,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 
 ## Ejercicio10. Taglibs, Lenguaje de Expresiones y dominios
 
-> En este ejercicio vamos a refactorizar nuestras vistas añadiendo Expression Language (__EL__)[^6] y usando Taglibs __JSTL__[^7] para mejorarlas.
+> En este ejercicio vamos a refactorizar nuestras vistas añadiendo Expression Language (__EL__)<sup id="a6">[6](#f6)</sup> y usando Taglibs __JSTL__<sup id="a7">[7](#f7)</sup> para mejorarlas.
 > También vamos a sacar los datos del array de usuarios para hacerlo más dinámico y funcional mediante una capa de objetos de dominio.
 
 1. Modifica el código de __login.jsp__ sustituyendo todo el código java por jstl y EL
@@ -320,10 +320,10 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 
 
 
-[^1]: [ServletRequest](http://docs.oracle.com/javaee/7/api/javax/servlet/ServletRequest.html)
-[^2]: [HttpServletRequest](http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html)
-[^3]: [Query_string](https://es.wikipedia.org/wiki/Query_string)
-[^4]: [RequestDispatcher](https://docs.oracle.com/javaee/7/api/javax/servlet/RequestDispatcher.html)
-[^5]: [HttpSession](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html)
-[^6]: [Expression Language](https://uel.java.net/)
-[^7]: [JSP Standard Tag Library (JSTL)](https://jstl.java.net/)
+<b id="f1">1</b>: [ServletRequest](http://docs.oracle.com/javaee/7/api/javax/servlet/ServletRequest.html)[↩](#a1)
+<b id="f2">2</b>: [HttpServletRequest](http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html)[↩](#a2)
+<b id="f3">3</b>: [Query_string](https://es.wikipedia.org/wiki/Query_string)[↩](#a3)
+<b id="f4">4</b>: [RequestDispatcher](https://docs.oracle.com/javaee/7/api/javax/servlet/RequestDispatcher.html)[↩](#a4)
+<b id="f5">5</b>: [HttpSession](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html)[↩](#a5)
+<b id="f6">6</b>: [Expression Language](https://uel.java.net/)[↩](#a6)
+<b id="f7">7</b>: [JSP Standard Tag Library (JSTL)](https://jstl.java.net/)[↩](#a7)

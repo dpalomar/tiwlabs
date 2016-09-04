@@ -42,15 +42,15 @@ es.uc3m.tiw
     4.  Un _interfaz_ llamado __UsuarioDAO__ que definirá las operaciones 
     5.  y una clase que implementa dicho interfaz que se llamará __UsuarioDAOImpl__ que contendrá las operaciones reales contra la base de datos.
 
-> Si observas el código, este tiene los métodos básicos de un CRUD[^1] (altas, bajas y modificaciones), más un par de métodos para manejar las conexiones.
+> Si observas el código, este tiene los métodos básicos de un CRUD<sup id="a1">[1](#f1)</sup> (altas, bajas y modificaciones), más un par de métodos para manejar las conexiones.
 >
 > La clase __UsuarioDAOImpl__ tiene el código JDBC para insertar y recuperar datos de la base de datos (_Statement, PreparedStatement, ResultSet y Connection_)
 
 4. Creamos una clase nueva llamada __Conector__ y un fichero de texto plano: __persistencia.properties__
 
-> La clase Conector gestiona las conexiones con varias bases de datos y utiliza un patrón Singleton[^2] para devolver una sola instancia. Para flexibilizar las conexiones con varias bases de datos de manera local o en remoto con un DataSource,[^3] esta clase hace uso de un fichero .properties
+> La clase Conector gestiona las conexiones con varias bases de datos y utiliza un patrón Singleton<sup id="a2">[2](#f2)</sup> para devolver una sola instancia. Para flexibilizar las conexiones con varias bases de datos de manera local o en remoto con un DataSource,<sup id="a3">[3](#f3)</sup> esta clase hace uso de un fichero .properties
 > 
-> El fichero _persistencia.properties_ es invocado tanto por el Conector como por el DAO, lo que permite modificar valores de bases de datos, drivers, conexiones y sentencias sin tener que recompilar las clases, y se carga mediante el objeto ResourceBundle[^4]
+> El fichero _persistencia.properties_ es invocado tanto por el Conector como por el DAO, lo que permite modificar valores de bases de datos, drivers, conexiones y sentencias sin tener que recompilar las clases, y se carga mediante el objeto ResourceBundle<sup id="a4">[4](#f4)</sup>
 > 
 
 5. El __LoginServlet__ debe cambiar ahora su código eliminando la creación de la lista de usuarios en memoria y usar el DAO para sacar los usuarios directamente de la base de datos.
@@ -232,7 +232,7 @@ Eclipse proporciona una herramienta gráfica para manejar las entidades, pero no
 > __ATENCION:__ No borres directamente una entidad del diagrama pues borrará también el código original (opción cubo de basura o delete), si lo que quieres es simplemente eliminarla del diagrama selecciona la entidad y (selecciona el icono del diskette junto al cubo de basura, opción: save and remove from diagram) 
 
 
-[^1]: [CRUD](https://es.wikipedia.org/wiki/CRUD)
-[^2]: [Singleton](https://es.wikipedia.org/wiki/Singleton)
-[^3]: [DataSource](https://en.wikipedia.org/wiki/Datasource)
-[^4]: [ResourceBundle](https://docs.oracle.com/javase/7/docs/api/java/util/ResourceBundle.html)
+<b id="f1">1</b>: [CRUD](https://es.wikipedia.org/wiki/CRUD)[↩](#a1)
+<b id="f2">2</b>: [Singleton](https://es.wikipedia.org/wiki/Singleton)[↩](#a2)
+<b id="f3">3</b>: [DataSource](https://en.wikipedia.org/wiki/Datasource)[↩](#a3)
+<b id="f4">4</b>: [ResourceBundle](https://docs.oracle.com/javase/7/docs/api/java/util/ResourceBundle.html)[↩](#a4)

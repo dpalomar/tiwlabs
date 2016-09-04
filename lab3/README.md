@@ -47,7 +47,7 @@ __INDICE__
 12. invoca el servicio con ese parámetro  y muestra el mensaje en el navegador.
     13. La URL será: http://localhost:8080/laboratorios/bienvenida?nombre=xxx
 
-> Para este ejercicio la documentación recomendada es el tutorial oficial de JEE7[^1]
+> Para este ejercicio la documentación recomendada es el tutorial oficial de JEE7 <sup id="a1">[1](#f1)</sup>
 
 ## Ejercicio2. JMS
 
@@ -103,4 +103,4 @@ __INDICE__
 4. Cambia el código de los servlets para que ahora invoquen los DAOs como `@EJB` sin necesidad de pasarles el EntityManager ni el UserTransaction.
 
 
-[^1]: [Tutorial EJBs](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm#BNBLR)
+<b id="f1">1</b>: [Tutorial EJBs](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm#BNBLR)[↩](#a1)

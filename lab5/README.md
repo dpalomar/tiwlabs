@@ -2,7 +2,7 @@
 
 > JBoss Forge permite acelerar la construcción de proyectos JEE y aunque hay plugins gráficos para varios entornos, en esta ocasión usaremos la versión de consola de comandos por rapidez.
 > 
-> Una vez adquiridos los conocimientos necesarios para trabajar con componentes JEE podemos ayudarnos de herramientas que aceleran nuestro trabajo como JBoss Forge[^1]
+> Una vez adquiridos los conocimientos necesarios para trabajar con componentes JEE podemos ayudarnos de herramientas que aceleran nuestro trabajo como JBoss Forge <sup id="a1">[1](#f1)</sup>
 > 
 
 <!-- MarkdownTOC -->
@@ -117,10 +117,10 @@ jpa-new-entity --named Usuario --idStrategy AUTO
          [registroUsuarios]$ ejb-new-bean --type
             MESSAGEDRIVEN  SINGLETON  STATEFUL  STATELESS
 
-Prueb otras opciones, como hacer relaciones entre entidades, usar servicios, crear servlets, usar JSF, etc. Puedes encontrar muchos ejemplos en la documentación oficial[^2]
+Prueb otras opciones, como hacer relaciones entre entidades, usar servicios, crear servlets, usar JSF, etc. Puedes encontrar muchos ejemplos en la documentación oficial <sup id="a2">[2](#f2)</sup>
 
 ---
 ## Referencias
 
-[^1]: [JBoss Forge](https://forge.jboss.org)
-[^2]: [https://forge.jboss.org/documentation](https://forge.jboss.org/documentation)
+<b id="f1">1</b>: [JBoss Forge](https://forge.jboss.org) [↩](#a1)
+<b id="f2">2</b>: [https://forge.jboss.org/documentation](https://forge.jboss.org/documentation) [↩](#a2)

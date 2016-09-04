@@ -1,7 +1,7 @@
 #  CDI
 
 >En este apartado, usando las características de CDI vamos a refactorizar los __Mensajes__ para coprobar la simplicidad de este modelo.
-Para documentación puede consultarse el tutorial de Oracle[^1]
+Para documentación puede consultarse el tutorial de Oracle <sup id="a1">[1](#f1)</sup>
 
 <!-- MarkdownTOC depth=3 -->
 
@@ -58,4 +58,4 @@ Para documentación puede consultarse el tutorial de Oracle[^1]
 3. Listo.
 
 
-[^1]: [Tutorial CDI](https://docs.oracle.com/javaee/7/tutorial/partcdi.htm#GJBNR)
+<b id="f1">1</b>: [Tutorial CDI](https://docs.oracle.com/javaee/7/tutorial/partcdi.htm#GJBNR)[↩](#a1)

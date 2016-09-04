@@ -117,29 +117,29 @@ El idioma del sistema por defecto es inglés americano, si quieres cambiar el id
 
 Para la instalación manual será necesario los siguientes pasos:
 
-1. Instalar JDK8[^1]
+1. Instalar JDK8 <sup id="a1">[1](#f1)</sup>
     2. Crear la variable de entorno *JAVA_HOME* apuntando al directorio _bin_ de la instalación
-2. Instalar maven[^2] 
+2. Instalar maven<sup id="a2">[2](#f2)</sup> 
     3. Crear la variable de entorno *M2_HOME* apuntando al directorio _bin_ de maven
-3. Instalar Springsource ToolSuite[^3]
-4. Instalar MySQL[^4]
+3. Instalar Springsource ToolSuite<sup id="a3">[3](#f3)</sup>
+4. Instalar MySQL<sup id="a4">[4](#f4)</sup>
     5. Usuario _root_ password _admin_
-5. Instalar MySqlWorkbench[^5]
-6. Instalar Payara Server[^6]
+5. Instalar MySqlWorkbench<sup id="a5">[5](#f5)</sup>
+6. Instalar Payara Server<sup id="a6">[6](#f6)</sup>
     7. Usuario _admin_ password _admin_
-7. Instalar MySql ConnectorJ[^7]
+7. Instalar MySql ConnectorJ<sup id="a7">[7](#f7)</sup>
     8. Descomprimir y poner el fichero _mysql-connector-5.1.x-bin.jar_ en el directorio *$PAYARA_INSTALACION/glassfish/domains/domain1/lib*
-9. _Opcional:_ instalar Docker[^8]
+9. _Opcional:_ instalar Docker<sup id="a8">[8](#f8)</sup>
 
 > Se recomienda un mínimo de 3Gb RAM libres para poder funcionar correctamente.
 
 
 
-[^1]: 
-[^2]: [http://maven.apache.org](http://maven.apache.org)
-[^3]: [http://spring.io/tools](http://maven.apache.org)
-[^4]: [http://www.mysql.com](http://www.mysql.com)
-[^5]: [http://www.mysql.com](http://www.mysql.com)
-[^6]: [http://www.payara.fish/](http://www.payara.fish/)
-[^7]: [http://www.mysql.com](http://www.mysql.com)
-[^8]: [http://www.docker.com](http://www.docker.com)
+<b id="f1">1</b> [http://www.oracle.com/technetwork/java/javase/downloads/index.html.](JDK8) [↩](#a1)
+<b id="f2">2</b>: [http://maven.apache.org](http://maven.apache.org)[↩](#a2)
+<b id="f3">3</b>: [http://spring.io/tools](http://spring.io/tools)[↩](#a3)
+<b id="f4">4</b>: [http://www.mysql.com](http://www.mysql.com)[↩](#a4)
+<b id="f5">5</b>: [http://www.mysql.com](http://www.mysql.com)[↩](#a5)
+<b id="f6">6</b>: [http://www.payara.fish/](http://www.payara.fish/)[↩](#a6)
+<b id="f7">7</b>: [http://www.mysql.com](http://www.mysql.com)[↩](#a7)
+<b id="f8">8</b>: [http://www.docker.com](http://www.docker.com)[↩](#a8)
