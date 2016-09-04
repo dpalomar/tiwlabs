@@ -18,6 +18,7 @@
 - [ANEXO:](#anexo)
     - [Trabajo en Eclipse con JPA](#trabajo-en-eclipse-con-jpa)
     - [JPA Designer](#jpa-designer)
+    - [Referencias](#referencias)
 
 <!-- /MarkdownTOC -->
 
@@ -231,8 +232,11 @@ Eclipse proporciona una herramienta gráfica para manejar las entidades, pero no
 
 > __ATENCION:__ No borres directamente una entidad del diagrama pues borrará también el código original (opción cubo de basura o delete), si lo que quieres es simplemente eliminarla del diagrama selecciona la entidad y (selecciona el icono del diskette junto al cubo de basura, opción: save and remove from diagram) 
 
+---
 
-<b id="f1">1</b>: [CRUD](https://es.wikipedia.org/wiki/CRUD)[↩](#a1)
-<b id="f2">2</b>: [Singleton](https://es.wikipedia.org/wiki/Singleton)[↩](#a2)
-<b id="f3">3</b>: [DataSource](https://en.wikipedia.org/wiki/Datasource)[↩](#a3)
-<b id="f4">4</b>: [ResourceBundle](https://docs.oracle.com/javase/7/docs/api/java/util/ResourceBundle.html)[↩](#a4)
+### Referencias
+
+- <b id="f1">1</b>: [CRUD](https://es.wikipedia.org/wiki/CRUD)[↩](#a1)
+- <b id="f2">2</b>: [Singleton](https://es.wikipedia.org/wiki/Singleton)[↩](#a2)
+- <b id="f3">3</b>: [DataSource](https://en.wikipedia.org/wiki/Datasource)[↩](#a3)
+- <b id="f4">4</b>: [ResourceBundle](https://docs.oracle.com/javase/7/docs/api/java/util/ResourceBundle.html)[↩](#a4)

@@ -15,6 +15,7 @@ La instalación y configuración de las herramientas para el desarrollo de la as
   - [Cambio de idioma](#cambio-de-idioma)
   - [Paso 5. Configuración de eclipse y Glassfish/Payara Server](#paso-5-configuración-de-eclipse-y-glassfishpayara-server)
 - [Manual](#manual)
+  - [Referencias](#referencias)
 
 <!-- /MarkdownTOC -->
 
@@ -133,13 +134,15 @@ Para la instalación manual será necesario los siguientes pasos:
 
 > Se recomienda un mínimo de 3Gb RAM libres para poder funcionar correctamente.
 
+---
 
+### Referencias
 
-<b id="f1">1</b> [http://www.oracle.com/technetwork/java/javase/downloads/index.html.](JDK8) [↩](#a1)
-<b id="f2">2</b>: [http://maven.apache.org](http://maven.apache.org)[↩](#a2)
-<b id="f3">3</b>: [http://spring.io/tools](http://spring.io/tools)[↩](#a3)
-<b id="f4">4</b>: [http://www.mysql.com](http://www.mysql.com)[↩](#a4)
-<b id="f5">5</b>: [http://www.mysql.com](http://www.mysql.com)[↩](#a5)
-<b id="f6">6</b>: [http://www.payara.fish/](http://www.payara.fish/)[↩](#a6)
-<b id="f7">7</b>: [http://www.mysql.com](http://www.mysql.com)[↩](#a7)
-<b id="f8">8</b>: [http://www.docker.com](http://www.docker.com)[↩](#a8)
+- <b id="f1">1</b> [JDK8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) [↩](#a1) 
+- <b id="f2">2</b>: [http://ma- ven.apache.org](http://maven.apache.org)[↩](#- a2)
+- <b id="f3">3</b>: [http://sp- ring.io/tools](http://spring.io/tools)[↩](#a3- )
+- <b id="f4">4</b>: [http://ww- w.mysql.com](http://www.mysql.com)[↩](#a4)- 
+- <b id="f5">5</b>: [http://ww- w.mysql.com](http://www.mysql.com)[↩](#a5)- 
+- <b id="f6">6</b>: [http://www.payara.fish/](http://www.payara.fish/)[↩](#- a6)
+- <b id="f7">7</b>: [http://www.mysql.com](http://www.mysql.com)[↩](#a7)
+- <b id="f8">8</b>: [http://www.docker.com](http://www.docker.com)[↩](#a8)

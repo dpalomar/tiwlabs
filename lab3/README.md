@@ -17,6 +17,7 @@ __INDICE__
     - [Crear la Cola JMS en Glassfish](#crear-la-cola-jms-en-glassfish)
     - [Crear el codigo.](#crear-el-codigo)
 - [Ejercicio3. Refactorizacion de la persistencia](#ejercicio3-refactorizacion-de-la-persistencia)
+    - [Referencias](#referencias)
 
 <!-- /MarkdownTOC -->
 
@@ -102,5 +103,8 @@ __INDICE__
 3. Modifica su código para que ahora invoquen ellos mismos el `EntityManager`
 4. Cambia el código de los servlets para que ahora invoquen los DAOs como `@EJB` sin necesidad de pasarles el EntityManager ni el UserTransaction.
 
+---
 
-<b id="f1">1</b>: [Tutorial EJBs](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm#BNBLR)[↩](#a1)
+### Referencias 
+
+- <b id="f1">1</b>: [Tutorial EJBs](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm#BNBLR)[↩](#a1)

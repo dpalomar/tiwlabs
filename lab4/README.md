@@ -8,6 +8,7 @@ Para documentación puede consultarse el tutorial de Oracle <sup id="a1">[1](#f1
 - [Ejercicio1. Configuración a CDI](#ejercicio1-configuración-a-cdi)
 - [Ejercicio2. Refactorización de los Mensajes](#ejercicio2-refactorización-de-los-mensajes)
 - [Ejercicio3. Estilo JEE7](#ejercicio3-estilo-jee7)
+  - [Referencias](#referencias)
 
 <!-- /MarkdownTOC -->
 
@@ -57,5 +58,8 @@ Para documentación puede consultarse el tutorial de Oracle <sup id="a1">[1](#f1
 
 3. Listo.
 
+---
 
-<b id="f1">1</b>: [Tutorial CDI](https://docs.oracle.com/javaee/7/tutorial/partcdi.htm#GJBNR)[↩](#a1)
+### Referencias
+
+- <b id="f1">1</b>: [Tutorial CDI](https://docs.oracle.com/javaee/7/tutorial/partcdi.htm#GJBNR)[↩](#a1)

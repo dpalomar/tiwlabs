@@ -319,11 +319,14 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
     7. Que pase al objeto usuario autenticado en sesión para que sea recibido por cualquier página a la que tenga acceso.
 
 
+---
 
-<b id="f1">1</b>: [ServletRequest](http://docs.oracle.com/javaee/7/api/javax/servlet/ServletRequest.html)[↩](#a1)
-<b id="f2">2</b>: [HttpServletRequest](http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html)[↩](#a2)
-<b id="f3">3</b>: [Query_string](https://es.wikipedia.org/wiki/Query_string)[↩](#a3)
-<b id="f4">4</b>: [RequestDispatcher](https://docs.oracle.com/javaee/7/api/javax/servlet/RequestDispatcher.html)[↩](#a4)
-<b id="f5">5</b>: [HttpSession](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html)[↩](#a5)
-<b id="f6">6</b>: [Expression Language](https://uel.java.net/)[↩](#a6)
-<b id="f7">7</b>: [JSP Standard Tag Library (JSTL)](https://jstl.java.net/)[↩](#a7)
+### Referencias
+
+- <b id="f1">1</b>: [ServletRequest](http://docs.oracle.com/javaee/7/api/javax/servlet/ServletRequest.html)[↩](#a1)
+- <b id="f2">2</b>: [HttpServletRequest](http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html)[↩](#a2)
+- <b id="f3">3</b>: [Query_string](https://es.wikipedia.org/wiki/Query_string)[↩](#a3)
+- <b id="f4">4</b>: [RequestDispatcher](https://docs.oracle.com/javaee/7/api/javax/servlet/RequestDispatcher.html)[↩](#a4)
+- <b id="f5">5</b>: [HttpSession](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html)[↩](#a5)
+- <b id="f6">6</b>: [Expression Language](https://uel.java.net/)[↩](#a6)
+- <b id="f7">7</b>: [JSP Standard Tag Library (JSTL)](https://jstl.java.net/)[↩](#a7)
