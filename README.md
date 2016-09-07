@@ -38,35 +38,35 @@ Al finalizar los laboratorios el alumno dispondrá de un conocimiento profundo d
 
 ###  Lab0. Configuracion del entorno
 
-En esta primera parte se realiza la configuración del entorno de trabajo.
+En esta primera parte se realiza la configuración del entorno de trabajo. [Accede](lab0/Readme.md)
 
 ###  Lab1. parte Web
 
-Ejercicios y conceptos sobre el desarrollo con Servlets y JSPs, filtros y taglibs
+Ejercicios y conceptos sobre el desarrollo con Servlets y JSPs, filtros y taglibs. [Accede](lab1/Readme.md)
 
 ###  Lab2. Persistencia
 
-Ejercicios y ejemplos de uso de JPA vs JDBC
+Ejercicios y ejemplos de uso de JPA vs JDBC. [Accede](lab2/README.md)
 
 ###  Lab3. EJB
 
-Se muestran los usos más básicos de este tipo de componentes y proyectos multimódulo.
+Se muestran los usos más básicos de este tipo de componentes y proyectos multimódulo. [Accede](lab3/README.md)
 
 ###  Lab4. CDI
 
-Una aproximación al modelo de desarrollo basado en _inversión de control_ y novedades JEE7
+Una aproximación al modelo de desarrollo basado en _inversión de control_ y novedades JEE7. [Accede](lab4/README.md)
 
 ###  Lab5. JBoss Forge
 
-Una vez conocido el modelo de desarrollo con los componentes JEE, en este laboratorio se muestra como acelerar el desarrollo con la herramienta JBoss Forge.
+Una vez conocido el modelo de desarrollo con los componentes JEE, en este laboratorio se muestra como acelerar el desarrollo con la herramienta JBoss Forge. [Accede](lab5/README.md)
 
 ###  Lab6. Servicios REST
 
-Ejercicios para la muestra de este tipo de servicios.
+Ejercicios para la muestra de este tipo de servicios. [Accede](lab6/README.md)
 
 ###  Lab7. SpringBoot
 
-Muestras de uso y conceptos de microservicios bajo la herramienta SpringBoot
+Muestras de uso y conceptos de microservicios bajo la herramienta SpringBoot. [Accede](lab7/README.md)
 
 ### Disclaimer
 
