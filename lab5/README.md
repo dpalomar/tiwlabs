@@ -122,5 +122,5 @@ Prueb otras opciones, como hacer relaciones entre entidades, usar servicios, cre
 ---
 ## Referencias
 
-<b id="f1">1</b>: [JBoss Forge](https://forge.jboss.org) [↩](#a1)
-<b id="f2">2</b>: [https://forge.jboss.org/documentation](https://forge.jboss.org/documentation) [↩](#a2)
+- <b id="f1">1</b>: [JBoss Forge](https://forge.jboss.org) [↩](#a1)
+- <b id="f2">2</b>: [https://forge.jboss.org/documentation](https://forge.jboss.org/documentation) [↩](#a2)
