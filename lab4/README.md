@@ -1,6 +1,6 @@
 #  CDI
 
->En este apartado, usando las características de CDI vamos a refactorizar los __Mensajes__ para coprobar la simplicidad de este modelo.
+>En este apartado, usando las características de CDI vamos a refactorizar los __Mensajes__ para comprobar la simplicidad de este modelo.
 Para documentación puede consultarse el tutorial de Oracle <sup id="a1">[1](#f1)</sup>
 
 <!-- MarkdownTOC depth=3 -->

@@ -117,7 +117,7 @@ jpa-new-entity --named Usuario --idStrategy AUTO
          [registroUsuarios]$ ejb-new-bean --type
             MESSAGEDRIVEN  SINGLETON  STATEFUL  STATELESS
 
-Prueb otras opciones, como hacer relaciones entre entidades, usar servicios, crear servlets, usar JSF, etc. Puedes encontrar muchos ejemplos en la documentación oficial <sup id="a2">[2](#f2)</sup>
+Prueba otras opciones, como hacer relaciones entre entidades, usar servicios, crear servlets, usar JSF, etc. Puedes encontrar muchos ejemplos en la documentación oficial <sup id="a2">[2](#f2)</sup>
 
 ---
 ## Referencias
