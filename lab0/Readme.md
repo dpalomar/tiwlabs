@@ -16,7 +16,7 @@ La instalación y configuración de las herramientas para el desarrollo de la as
   - [Cambio de idioma](#cambio-de-idioma)
   - [Paso 5. Configuracion de eclipse y Glassfish/Payara Server](#paso-5-configuracion-de-eclipse-y-glassfishpayara-server)
 - [Manual](#manual)
-  - [Referencias](#referencias)
+- [Referencias](#referencias)
 
 <!-- /MarkdownTOC -->
 
@@ -82,7 +82,7 @@ Si se corta la descarga repetidamente y te devuelve un error, puedes tratar de h
 
 Si sigue dando un error en la descarga es posible que el servidor esté saturado. Prueba esta opción alternativa:
 
-      vagrant box add dpalomar/uc3mTiw http://www.lab.inf.uc3m.es/~dpalomar/imagen/uc3mTiw.virtualbox.box --clean --force --provider virtualbox
+      vagrant box add http://www.lab.inf.uc3m.es/~dpalomar/imagen/uc3mTiw.virtualbox.box --name dpalomar/uc3mTiw --clean --force --provider virtualbox
 
 En cualquier caso asegúrate de disponer de una buena conexión ya que la imagen pesa 3Gb.
 
@@ -153,7 +153,7 @@ Para la instalación manual será necesario los siguientes pasos:
 
 ---
 
-### Referencias
+## Referencias
 
 - <b id="f1">1</b> [JDK8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) [↩](#a1) 
 - <b id="f2">2</b>: [http://ma- ven.apache.org](http://maven.apache.org)[↩](#- a2)
