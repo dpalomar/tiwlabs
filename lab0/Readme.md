@@ -7,13 +7,14 @@ La instalación y configuración de las herramientas para el desarrollo de la as
 
 <!-- MarkdownTOC depth=3 -->
 
-- [Automática](#automática)
-  - [Paso 1. Instalación de herramientas](#paso-1-instalación-de-herramientas)
+- [Automatica](#automatica)
+  - [Paso 1. Instalacion de herramientas](#paso-1-instalacion-de-herramientas)
   - [Paso 2. Vagrant init](#paso-2-vagrant-init)
   - [Paso 3. Modificar el fichero Vagrantfile](#paso-3-modificar-el-fichero-vagrantfile)
   - [Paso 4. Arrancar la imagen](#paso-4-arrancar-la-imagen)
+  - [Problemas con la descarga](#problemas-con-la-descarga)
   - [Cambio de idioma](#cambio-de-idioma)
-  - [Paso 5. Configuración de eclipse y Glassfish/Payara Server](#paso-5-configuración-de-eclipse-y-glassfishpayara-server)
+  - [Paso 5. Configuracion de eclipse y Glassfish/Payara Server](#paso-5-configuracion-de-eclipse-y-glassfishpayara-server)
 - [Manual](#manual)
   - [Referencias](#referencias)
 
@@ -23,9 +24,9 @@ La instalación y configuración de las herramientas para el desarrollo de la as
 > Se muestra en primera instancia la instalación automática
 
 
-## Automática
+## Automatica
 
-### Paso 1. Instalación de herramientas
+### Paso 1. Instalacion de herramientas
 
 Para este escenario será necesario instalar las siguientes herramientas:
 
@@ -73,6 +74,22 @@ __ATENCIÓN:__ Observa como en `vb.memory` se ha cambiado el valor de __1024__ a
 
 > Si has salido de la imagen haciendo un shutdown, siempre puedes volver a iniciarla escribiendo de nuevo __Vagrant up__ desde el directorio donde se encuentra el fichero Vagrantfile
 
+### Problemas con la descarga
+
+Si se corta la descarga repetidamente y te devuelve un error, puedes tratar de hacer el siguiente comando:
+
+      vagrant box add dpalomar/uc3mTiw --clean
+
+Si sigue dando un error en la descarga es posible que el servidor esté saturado. Prueba esta opción alternativa:
+
+      vagrant box add dpalomar/uc3mTiw http://www.lab.inf.uc3m.es/dpalomar/imagen/uc3mTiw.virtualbox.box --clean --force --provider virtualbox
+
+En cualquier caso asegúrate de disponer de una buena conexión ya que la imagen pesa 3Gb.
+
+Cuando finalice la descarga, puedes volver a ejecutar el comando `vagrant up`
+
+> __OPCIONAL__: Si nada de esto funciona siempre puedes descargar la imagen manualmente en formato _.ovf_ desde el enlace de aulaglobal e instalarlo manualmente con virtualbox.
+
 ### Cambio de idioma
 
 El idioma del sistema por defecto es inglés americano, si quieres cambiar el idioma a español sigue los siguientes pasos:
@@ -86,7 +103,7 @@ El idioma del sistema por defecto es inglés americano, si quieres cambiar el id
 5. Regresando al cuadro anterior mueve el idioma _ES_ a la primera posición ![](images/Imagen4.png)
 6. Listo ya tienes traducido el sistema.
 
-### Paso 5. Configuración de eclipse y Glassfish/Payara Server
+### Paso 5. Configuracion de eclipse y Glassfish/Payara Server
 
 1. Abre Eclipse desde el  __menú inicio -> programming -> STS__
 2. Crea o acepta el directorio de trabajo (se recomienda llamarlo _workspace_ en un directorio con permisos).
