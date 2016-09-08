@@ -82,7 +82,7 @@ Si se corta la descarga repetidamente y te devuelve un error, puedes tratar de h
 
 Si sigue dando un error en la descarga es posible que el servidor esté saturado. Prueba esta opción alternativa:
 
-      vagrant box add dpalomar/uc3mTiw http://www.lab.inf.uc3m.es/dpalomar/imagen/uc3mTiw.virtualbox.box --clean --force --provider virtualbox
+      vagrant box add dpalomar/uc3mTiw http://www.lab.inf.uc3m.es/~dpalomar/imagen/uc3mTiw.virtualbox.box --clean --force --provider virtualbox
 
 En cualquier caso asegúrate de disponer de una buena conexión ya que la imagen pesa 3Gb.
 
