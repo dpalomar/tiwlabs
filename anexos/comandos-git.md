@@ -1,0 +1,25 @@
+# Resumen de comandos Git
+
+- __git init__: crea un repositorio git nuevo sobre el directorio en el que se esté trabajando
+- __git status__: muestra el estado actual del repositorio local
+- __git config__ --global user.name <nombre>: Crea el nombre del usuario, es necesario para hacer los commits
+- __git config__ --global user.email <email>: Crea el email del usuario, necesario para algunos repositorios remotos. 
+- __git log__: muestra el histórico de commits del repositorio
+- __git log__ --oneline --decorate: muestra el histórico en una versión resumida.
+- __git add__ <fichero/directorio>: añade el fichero(s)/directorio(s) al stagging area (lo prepara para el commit)
+- __git commit__ -m "mensaje": realiza un commit local con los ficheros o comandos preparados en el stagging area
+- __git checkout__ -- <fichero/directorio>: elimina el fichero/directorio del stagging area y lo devuelve al working directory.
+- __git rm__ <fichero>: borra el fichero en el siguiente commit.
+- __git mv__ <fichero>: renombra el fichero en el siguiente commit.
+- __git reset__ -- HEAD <fichero>: borra el último commit del fichero y lo devuelve al working directory, algo así como un ctrl+z del commit.
+- __git remote__ -v: muestra la URL del repositorio remoto (github)
+- __git remote__ add origin <URL>: inserta la URL del repositorio remoto.
+- __git branch__ -a: muestra las ramas actuales del proyecto e indica sobre cuál estas trabajando ahora mismo
+- __git branch__ <rama>: crea una nueva rama.
+- __git checkout__ <rama>: cambia de rama y sitúa por tanto el puntero HEAD sobre esa rama.
+- __git branch__ -rm <rama>: borra la rama
+- __git merge__ <rama>: fusiona la rama con la actual en la que te encuentres (no se puede hacer sobre la misma).
+- __git fetch__ origin/<rama>: descarga (si puede o no hay conflictos) la rama del repositorio remoto, pero no los fusiona, habría que hacer posteriormente un merge
+- __git pull__ origin/<rama> <rama-local>: es una macro que hace primero un fetch de la rama del origin y luego un merge automáticamente sobre la rama local (si puede).- __
+- __git diff__: permite ver diferencias entre disintos commits, o puntos del desarrollo, ramas o ficheros (admite varios parámetros).
+- __git push origin master__: envía los cambios locales al repositorio remoto (github) de la rama master (local) a la rama master remota (origin). Variar estos parámetros si lo que se envía es otra rama en lugar de la master.

@@ -19,7 +19,8 @@ Curso 2016-2017
     - [Lab5. JBoss Forge](#lab5-jboss-forge)
     - [Lab6. Servicios REST](#lab6-servicios-rest)
     - [Lab7. SpringBoot](#lab7-springboot)
-    - [Disclaimer](#disclaimer)
+- [Anexos](#anexos)
+- [Disclaimer](#disclaimer)
 
 <!-- /MarkdownTOC -->
 
@@ -68,7 +69,11 @@ Ejercicios para la muestra de este tipo de servicios. [Accede](lab6/README.md)
 
 Muestras de uso y conceptos de microservicios bajo la herramienta SpringBoot. [Accede](lab7/README.md)
 
-### Disclaimer
+## Anexos
+
+Resúmenes de comandos y otra información util. [Accede](anexos/README.md)
+
+## Disclaimer
 
 La documentación está generada con markdown y debido a un bug en una de las herramientas que permite generar las tablas de contenidos y volcado a html no admiten caracteres latinos como las tildes o eñes, por lo que se ha prescindido estos de los títulos de sección. 
 
