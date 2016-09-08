@@ -11,5 +11,6 @@
 - __select, insert, update__... etc.; -> sentencias SQL.
 - __help__  -> menú de ayuda general y también de comando help <comando>;
 - __exit__ -> sale del programa y te devuelve a la consola.
-Más información en: [http://bfy.tw/7b1X]()
+
+Más información en: [http://bfy.tw/7b1X](http://bfy.tw/7b1X)
 
