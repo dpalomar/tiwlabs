@@ -51,7 +51,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 	public Usuario recuperarUnUsuarioPorNombre(String nombre) throws SQLException{
 		
 		Query consulta = em.createQuery("select u from Usuario u where u.usuario=:nom", Usuario.class);
-		consulta.setParameter("nom", "nombre");
+		consulta.setParameter("nom", nombre);
 		return (Usuario) consulta.getResultList().get(0);
 	}
 	@Override
