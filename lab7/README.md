@@ -660,6 +660,10 @@ public interface UsuarioDao extends CrudRepository<Usuario, Long> {
 ```
 - Al realizar la consulta por `PUT` sobre la URL: [http://localhost:8080/usuarios/1]() recibirás una respuesta vacía y un código `204` indicando que se ha modificado correctamente. Pero al realizar de nuevo la consulta por `GET` obtendrás el nuevo `JSON` con los datos modificados: la __edad__ y una __nueva dirección__.
 
+> NOTA: Si quieres hacer un cliente que consuma los servicios REST, hay varias opciones, usar Javascript en el navegador junto con AJAX (puede usarse JQuery o AngularJS para simplificar el proceso), o usar una clase java que haga de cliente en el servidor.
+> 
+> Puedes encontrar ejemplos de ambos clientes en el [Anexo](anexos/Readme.md)
+
 ## Ejercicio 11. HATEOAS
 
 > HATEOAS permite crear documentos Hipermedia usando los enlaces REST para navegar entre peticiones a repositorios como si fuera html.
