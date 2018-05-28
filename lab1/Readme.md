@@ -294,9 +294,17 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
 > En este ejercicio vamos a refactorizar nuestras vistas añadiendo Expression Language (__EL__)<sup id="a6">[6](#f6)</sup> y usando Taglibs __JSTL__<sup id="a7">[7](#f7)</sup> para mejorarlas.
 > También vamos a sacar los datos del array de usuarios para hacerlo más dinámico y funcional mediante una capa de objetos de dominio.
 
-1. Modifica el código de __login.jsp__ sustituyendo todo el código java por jstl y EL
-2. Haz lo mismo con la página __listado.jsp__
-3. Crea una __clase java normal__ llamada __Usuario__ en un nuevo paquete _es.uc3m.tiw.lab1.dominios_ que tenga las siguiente propiedades y sus correspondientes métodos get/set:
+1. Añade la dependencia a Maven para jslt en el archivo pom.xml
+```
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+```
+2. Modifica el código de __login.jsp__ sustituyendo todo el código java por jstl y EL
+3. Haz lo mismo con la página __listado.jsp__
+4. Crea una __clase java normal__ llamada __Usuario__ en un nuevo paquete _es.uc3m.tiw.lab1.dominios_ que tenga las siguiente propiedades y sus correspondientes métodos get/set:
 
 ```java
     String nombre;
@@ -313,7 +321,7 @@ Vamos a iniciarnos en el desarrollo de Servlets con un primer ejemplo:
     ...
 ```
 
-4. Modifica el código del __LoginServlet__ para que ahora:
+5. Modifica el código del __LoginServlet__ para que ahora:
     5. Contenga una lista de objetos Usuario ya creados
     6. Que tenga una lógica nueva que permita acceder a cualquier usuario/password definidos en esa lista
     7. Que pase al objeto usuario autenticado en sesión para que sea recibido por cualquier página a la que tenga acceso.
